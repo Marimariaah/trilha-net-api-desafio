@@ -58,7 +58,7 @@ namespace TrilhaApiDesafio.Controllers
             //  Buscar  as tarefas no banco utilizando o EF, que contenha o status recebido por parâmetro
             var listaDeTarefas = _context.Tarefas.Where(x => x.Status == status).ToList();
 
-            // Dica: Usar como exemplo o endpoint ObterPorData            
+            // Dica: Usar como exemplo o endpoint ObterPorData
             return Ok(listaDeTarefas);
         }
 
